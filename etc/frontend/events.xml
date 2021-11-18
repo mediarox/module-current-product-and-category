@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Mediarox_CurrentProductAndCategory
+ * @copyright Copyright 2021(c) mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)
+ * @author Marcus Bernt <mbernt@mediarox.de>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_controller_product_init_after">
+        <observer name="register_current_product" instance="Mediarox\CurrentProductAndCategory\Observer\RegisterCurrentProduct"/>
+    </event>
+    <event name="catalog_controller_category_init_after">
+        <observer name="register_current_category" instance="Mediarox\CurrentProductAndCategory\Observer\RegisterCurrentCategory"/>
+    </event>
+</config>
