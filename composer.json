@@ -2,7 +2,7 @@
   "name": "mediarox/module-current-product-and-category",
   "description": "Custom registry for current product and category retrieval.",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": [
     "MIT"
   ],
