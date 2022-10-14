@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package   Mediarox_CurrentProductAndCategory
  * @copyright Copyright 2021 (c) mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)
@@ -31,6 +32,4 @@ class CurrentProduct
     {
         return $this->product ?? $this->productFactory->create();
     }
-
-
 }
